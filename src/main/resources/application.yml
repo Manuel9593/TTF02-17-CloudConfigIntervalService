@@ -1,0 +1,11 @@
+spring:
+  application:
+      name: interval-service
+  config:
+    import:
+    - optional:configserver:http://localhost:8888
+server:
+  port: 80
+interval-services:
+  min: 50
+  max: 100
